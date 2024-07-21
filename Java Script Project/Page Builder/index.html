@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page Builder</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h1>בונה מסך</h1>
+        <h2>הזן את הנתונים והאלמנט יופיע על המסך</h2>
+        <input type="color" id="ucolor" value="#ffffff">
+        <input type="number" id="sizew" placeholder="רוחב">
+        <input type="number" id="sizeh" placeholder="גובה">
+        <input type="text" id="content" placeholder="שם התוכן">
+        <input type="number" id="fontSize" placeholder="גודל פונט">
+        <input type="color" id="fontColor" value="#000000">
+        <input type="number" id="frameThickness" placeholder="עובי מסגרת">
+        <select id="frameStyle">
+            <option value="solid">מלא</option>
+            <option value="dotted">נקודות</option>
+            <option value="dashed">מקווקו</option>
+        </select>
+        <input type="color" id="frameColor" value="#000000">
+        <input type="number" id="internalSpacing" placeholder="ריווח פנימי">
+        <input type="number" id="externalSpacing" placeholder="ריווח חיצוני">
+        <input type="number" id="borderRadius" placeholder="רדיוס פינות">
+        <select id="elementType">
+            <option value="div">תיבה</option>
+            <option value="h1">כותרת ראשית</option>
+            <option value="h2">כותרת משנה 1</option>
+            <option value="h3">כותרת משנה 2</option>
+            <option value="p">פסקה</option>
+            <option value="span">טקסט קטן</option>
+        </select>
+        <input type="number" id="shadowX" placeholder="ציר X">
+        <input type="number" id="shadowY" placeholder="ציר Y">
+        <input type="color" id="shadowColor" placeholder="צבע הצל">
+
+        <input type="button" value="הוסף" id="btn">
+    </div>
+
+    <div class="container"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

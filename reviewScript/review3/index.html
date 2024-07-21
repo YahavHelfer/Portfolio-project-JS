@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="mainReview.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo-white-removebg-preview.png" alt="logo">
+            </div>
+        <div class="container">
+            <h1>JavaScript</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../protfolio/start.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2 class="h2">Tic Tac Toe</h2>
+           <p>This JavaScript-based Tic-Tac-Toe game offers a fun and interactive way to enjoy the classic game. Featuring a sleek and
+        responsive design with an appealing orange and light blue color scheme, the game allows two players to compete by
+        marking X's and O's on a 3x3 grid. The interface highlights the winning combination and provides a prompt to play again,
+        ensuring an engaging user experience.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="button-container">
+                <a href="../../Java Script Project/zip files/Tic-Tac-Toe.zip" class="download-button">Download</a>
+                <a href="../../Java Script Project/Tic-Tac-Toe/index.html" class="view-button">View</a>
+            </div>
+            <div class="container-image">
+                <img src="tictac.png" alt="project image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yahav Helfer - All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+
+    </script>
+</body>
+
+</html>

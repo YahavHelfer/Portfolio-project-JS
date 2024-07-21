@@ -1,0 +1,109 @@
+// variables
+$primary-color: #C19A6B;
+$secondary-color: #f4f4f4;
+$accent-color: #fff;
+
+// mixins
+@mixin container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+// styles
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @include container;
+}
+
+header {
+    background-color: $primary-color;
+    color: $accent-color;
+    padding: 20px 0;
+    position: fixed; // Make the header fixed
+    top: 0; // Position it at the top of the viewport
+    width: 100%; // Make the header span the entire width
+
+    h1 {
+        margin: 0;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+
+
+        li {
+            display: inline;
+            margin-right: 20px;
+
+            a {
+                color: $accent-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Add padding to the body to prevent content from being overlapped by the fixed header
+body {
+    padding-top: 80px; // Adjust as needed based on the height of your header
+}
+
+#hero {
+    background-color: $secondary-color;
+    padding: 100px 0;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+#about {
+    padding: 50px 0;
+}
+
+#portfolio {
+    padding: 50px 0;
+
+    .portfolio-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .portfolio-item {
+            flex: 0 1 calc(33.33% - 20px); // Adjusted to 33.33% for three items per row
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid $primary-color;
+            border-radius: 5px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            p {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: $accent-color;
+    padding: 20px 0;
+    text-align: center;
+}

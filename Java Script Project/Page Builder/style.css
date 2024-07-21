@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.sidebar h1,
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar input[type='number'],
+.sidebar input[type='text'],
+.sidebar select,
+.sidebar input[type='color'] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.sidebar input[type='button'] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(195, 57, 108);
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 320px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.element {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.element-content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sidebar input[type='number'],
+    .sidebar input[type='text'],
+    .sidebar select,
+    .sidebar input[type='color'],
+    .sidebar input[type='button'] {
+        width: 100%;
+    }
+}
