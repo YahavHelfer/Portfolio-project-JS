@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="mainReview.css">
+</head>
+
+<body>
+    <nav class="logo">
+        <img src="logo-white-removebg-preview.png" alt="logo">
+    </nav>
+
+    <header>
+
+        <div class="container">
+            <h1>JavaScript</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../protfolio/start.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2 class="h2">Fruits Scramble Game</h2>
+            <p>This engaging JavaScript-based Fruits Scramble Game challenges players to unscramble mixed-up fruit
+                names. With a
+                colorful and responsive design, the game offers a fun and educational experience for all ages. Players
+                can guess the
+                correct fruit name from scrambled letters and receive instant feedback on their guesses. The game
+                encourages quick
+                thinking and improves vocabulary, making it an entertaining and beneficial activity.
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="button-container">
+                <a href="../../Java Script Project/zip files/Fruits Scramble Game.zip"
+                    class="download-button">Download</a>
+                <a href="../../Java Script Project/Fruits Scramble Game/index.html" class="view-button">View</a>
+            </div>
+            <div class="container-image">
+                <img src="../review6/wordsS.png" alt="project image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yahav Helfer - All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+
+    </script>
+</body>
+
+</html>

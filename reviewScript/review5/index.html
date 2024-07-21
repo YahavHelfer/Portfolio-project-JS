@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="mainReview.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <div class="container">
+            <h1>JavaScript</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../protfolio/start.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2 class="h2">Page Builder</h2>
+           <p>This JavaScript-powered Page Builder is a versatile tool for creating web pages with ease. With a responsive design, the
+        Page Builder ensures that the created pages look great on all devices. Ideal for users of all skill levels, it
+        simplifies the web development process and enables the creation of professional-looking websites quickly and
+        efficiently.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="button-container">
+                <a href="../../Java Script Project/zip files/Page Builder.zip" class="download-button">Download</a>
+                <a href="../../Java Script Project/Page Builder/index.html" class="view-button">View</a>
+            </div>
+            <div class="container-image">
+                <img src="pageB.png" alt="project image">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yahav Helfer - All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+
+    </script>
+</body>
+
+</html>
