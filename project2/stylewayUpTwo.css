@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.backround-image {
+    position: absolute;
+    top: -250px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% + 40px);
+    background-image: url('wayUp2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.hone {
+    color: #D3E10E;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: Assistant;
+}
+
+p {
+    color: #F9F9F9;
+    text-align: center;
+    font-size: small;
+    margin-top: 20px;
+    font-family: Assistant;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 230px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+
+}
+
+label {
+    color: #011560;
+    font-family: Assistant;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+input {
+    background-color: #F6F6F6;
+    border: none;
+    width: 200px;
+    height: 25px;
+    border-bottom: 2px solid #D3E10E;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #D3E10E;
+    width: 70px;
+    height: 25px;
+    font-size: 10px;
+    font-family: Assistant;
+    margin-top: 12px;
+    margin-right: 10px;
+    color: #011560;
+    font-family: Assistant;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    #form {
+        flex-direction: column-reverse;
+        margin-top: 180px;
+    }
+
+    input {
+        width: 350px;
+        height: 30px;
+        background-color: #E5EEFF;
+    }
+
+    input[type="submit"] {
+        width: 350px;
+        height: 30px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .backround-image {
+        width: 100%;
+        margin-top: -40px;
+        object-fit: cover;
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .hone {
+        font-size: 30px;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    p {
+        max-width: 280px;
+        word-wrap: break-word;
+        margin-left: 110px;
+    }
+}

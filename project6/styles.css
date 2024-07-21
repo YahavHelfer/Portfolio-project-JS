@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Amatic SC;
+
+    background: linear-gradient(to bottom, #D2B48C, #F5DEB3);
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-column {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.side-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.side-image:hover {
+    transform: scale(1.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    font-family: Amatic SC;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #bc9b83;
+}
+
+button {
+    display: block;
+    width: 106%;
+    padding: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Amatic SC;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b78f72;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-column,
+    .form-column {
+        width: 100%;
+    }
+
+    .side-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .image-column {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

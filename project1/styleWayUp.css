@@ -1,0 +1,99 @@
+ body {
+     font-family: Heebo;
+     margin: 0;
+     padding: 0;
+     background-image: url(WayUpbgc.png);
+     background-attachment: fixed;
+     height: 98vh;
+     position: relative;
+     z-index: 2;
+
+ }
+
+
+ .white-background {
+     position: fixed;
+     top: 62vh;
+     left: 0;
+     width: 100%;
+     height: 50%;
+     background-color: #fff;
+     z-index: 1;
+ }
+
+ .container {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     z-index: 2;
+ }
+
+ .form-container {
+     background-color: #1A1A1AD4;
+     padding: 25px;
+     text-align: right;
+     width: 300px;
+     margin-left: 700px;
+     height: 360px;
+ }
+
+ input[type="text"] {
+     width: 90%;
+     padding: 10px;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+     border: 1px solid #D31C75;
+     opacity: 1;
+ }
+
+ input[type="email"] {
+     width: 90%;
+     padding: 10px;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+     border: 1px solid #D31C75;
+     opacity: 1;
+ }
+
+ .submit-container {
+     width: 100%;
+     display: flex;
+ }
+
+ .submit-container>input {
+     width: 100px;
+     height: 32px;
+     background: #D31C75;
+     padding: 5px;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+     margin-left: auto;
+     margin-top: 10px;
+     font-size: medium;
+ }
+
+ h2 {
+     text-align: center;
+     color: #fff;
+     font-family: heebo;
+ }
+
+ p {
+     text-align: center;
+     color: #F9F9F9;
+     font-size: small;
+     font-family: heebo;
+ }
+
+ label {
+     color: #fff;
+     text-align: right;
+     font-family: Heebo;
+     font-size: small;
+     margin-right: 6px;
+     width: 100px;
+
+ }

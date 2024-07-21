@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    direction: rtl;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-left: 100px;
+
+}
+
+.container-input3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+input {
+    background-color: #E5EEFF;
+    width: 290px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #FDBD03;
+}
+
+img {
+    width: 60%;
+    object-fit: cover;
+}
+
+.img {
+    margin-left: 50px;
+}
+
+h2 {
+    color: #FDBD03;
+    font-size: 60px;
+}
+
+p {
+    color: #020253;
+    font-size: 14px;
+}
+
+.container-header {
+    text-align: right;
+    font-family: heebo;
+    padding: 50px;
+    margin-left: auto;
+}
+
+.input3 {
+    width: 588px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    background: #FDBD03;
+    color: #000;
+    width: 80px;
+    height: 25px;
+    font-family: heebo;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 35px;
+}
+
+label {
+    color: #2C2C2C;
+    font-family: heebo;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+label[for="email"] {
+    position: relative;
+    bottom: 15px;
+    right: 24px;
+}
+
+label[for="name"] {
+    position: relative;
+    bottom: 30px;
+    right: 35px;
+}
+
+.icon {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+img[src="whatssapIcon.png"] {
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+.icon2 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    display: flex;
+    width: 70px;
+
+}
+
+.icon2 img {
+    margin-right: 15px;
+}
+
+.imgbgc {
+    background-color: #FDBD03;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.stripes {
+    position: fixed;
+    background-color: #FDBD03;
+}
+
+.bottom-stripe {
+    bottom: 0;
+    left: 0;
+    width: 720px;
+    height: 10px;
+}
+
+.top-right-stripe {
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        align-items: center;
+        height: 70%;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 15px;
+        bottom: 70px;
+    }
+
+    .input-group input {
+        margin-bottom: 10px;
+        width: 400px;
+    }
+
+    .input3 {
+        width: 400px;
+        position: relative;
+        left: 58px;
+        bottom: 80px;
+    }
+
+    label[for="email"] {
+        position: relative;
+        right: 2px;
+        bottom: 2px;
+    }
+
+    .container-header {
+        text-align: center;
+        position: relative;
+        right: 50px;
+        bottom: 25px;
+    }
+
+    img[src="whatssapIcon.png"] {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .img {
+        position: absolute;
+        top: 20px;
+        left: 220px;
+        ;
+
+
+    }
+
+    img[src="dvora.png"] {
+        width: 60px;
+    }
+
+    input[type="submit"] {
+        position: relative;
+        bottom: 40px;
+        left: 18px;
+    }
+
+    .icon2 {
+        position: absolute;
+        width: 60px;
+    }
+
+    .bottom-stripe {
+        width: 100%;
+    }
+
+    .imgbgc {
+        position: relative;
+        top: 36px;
+        left: 140px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    label[for="name"] {
+        position: relative;
+        bottom: 2px;
+        right: 2px;
+    }
+
+    label[for="name2"] {
+        position: relative;
+        bottom: 80px;
+        left: 55px;
+    }
+}
