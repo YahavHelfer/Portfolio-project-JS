@@ -215,7 +215,7 @@ a {
 
 .main-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -229,6 +229,13 @@ a {
 
 .main-nav ul li {
   margin: 0 15px;
+
+}
+
+.h1 {
+  position: relative;
+  left: 40px;
+  bottom: 10px;
 }
 
 .main-nav ul li a {
