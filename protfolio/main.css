@@ -321,6 +321,17 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .meAbout{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .cv{
+      display: flex;
+      justify-content: center;
+    }
 }
 
 #contact {
