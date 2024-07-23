@@ -42,6 +42,43 @@ img {
   flex-direction: column;
 }
 
+.aboutP a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #C19A6B;
+  /* Button background color */
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.aboutP a:hover {
+  background-color: #A0522D;
+  /* Hover background color */
+}
+
+.aboutP a:active {
+  background-color: #8B4513;
+  /* Active background color */
+}
+
+.aboutP a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(193, 154, 107, 0.5);
+  /* Focus outline */
+}
+.cv{
+  display: flex;
+  margin-top: 30px;
+  
+}
 .htmlCssJs {
   display: flex;
   gap: 5px;
@@ -127,7 +164,7 @@ body {
   margin-bottom: 30px;
   padding: 5px;
   border: 1.5px solid #C19A6B;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 #portfolio .portfolio-items .portfolio-item img {
@@ -158,12 +195,12 @@ body {
 .portfolio-item a {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   background-color: #C19A6B;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
@@ -174,6 +211,10 @@ body {
 
 .portfolio-item a:active {
   background-color: #8B4513;
+}
+
+.portfolio-item {
+  text-align: center;
 }
 
 footer {
@@ -190,11 +231,7 @@ footer {
   left: 126px;
 }
 
-a {
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-}
+
 
 .hamburger {
   display: none;
@@ -228,9 +265,10 @@ a {
 }
 
 .main-nav ul li {
-  margin: 0 15px;
+  margin: 0 12px;
 
 }
+
 
 .h1 {
   position: relative;
@@ -241,7 +279,7 @@ a {
 .main-nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
@@ -285,31 +323,31 @@ a {
   }
 }
 
-.contact {
+#contact {
   padding: 50px 0;
   background-color: #f4f4f4;
 }
 
-.contact form {
+#contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.contact label {
+#contact label {
   font-size: 16px;
   color: #333;
 }
 
-.contact input,
-.contact textarea {
+#contact input,
+#contact textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.contact button {
+#contact button {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
@@ -320,6 +358,6 @@ a {
   transition: background-color 0.3s;
 }
 
-.contact button:hover {
+#contact button:hover {
   background-color: #A0522D;
 }
